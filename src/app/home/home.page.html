@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Palindromos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-header color="secondary">
+            <ion-card-title> ¿Es un palindromo? ¡Averígualo! </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-item>
+              <ion-label position="floating">Escribe tu frase</ion-label>
+              <ion-input type="text" #fraseTXT> </ion-input>
+            </ion-item>
+            <ion-button
+              color="tertiary"
+              id="btnAnalizar"
+              (click)="analizar(fraseTXT)"
+            >
+              <ion-icon slot="start" name="glasses-outline"></ion-icon>
+              Analizar
+            </ion-button>
+
+            <ion-button color="danger" (click)="#fraseTXT=null">
+              <ion-icon slot="start" name="refresh-outline"></ion-icon>
+              Limpiar
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

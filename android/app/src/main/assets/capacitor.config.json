@@ -1,0 +1,6 @@
+{
+	"appId": "com.palindromosProgra3.app",
+	"appName": " Palindromos",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
